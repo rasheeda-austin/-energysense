@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>EnergySense Heating & Cooling</title>
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-navbar__scroll-sticky" id="navbar">
+        <div class="navbar-contact__sticky">
+            <div id="ctaSticky" class="cta-button">
+                <a class="cta-button-link" href="tel:919-291-2741">
+                    <div>(919) 291-2741</div>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-logo__sticky">
+            <div class="logo-sticky logo-hdr__sticky">
+                <a href="../index.html" class="logo-link">
+                    <div id="logoImg-sticky"></div>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-menuBtn__sticky">
+            <div class="menu-btn" onclick="toggleMenuBtn(this)" id="menuBtn">
+                <div class="bars bar1"></div>
+                <div class="bars bar2"></div>
+                <div class="bars bar3"></div>
+            </div>
+        </div>
+        <div class="navbar-menubar__sticky">
+            <div class="menu-items">
+                <a href="#">Home</a>
+            </div>
+            <div class="menu-items"><a href="#link-to-Section1">Services</a></div>
+            <div class="menu-items"><a href="about-us/index.html">About Us</a></div>
+            <div class="menu-items" id="last-item"><a href="about-us/index.html">Contact</a></div>
+        </div>
+        <div class="navbar-other__sticky">
+            <div>(919) 291-2741</div>
+            <div class="cta-button">
+
+                <a class="cta-button-link" href="tel:919-291-2741">
+                    <div>CALL US</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobileNavCnt" id="mobileNavMenu">
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item" id="nav-item1">
+                    <a href="../index.html">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item1">
+                    <a href="./index.html">
+                        <span class="menu-text">Emergency Repair</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item2">
+                    <a href="../index.html">
+                        <span class="menu-text">Installation & Replacement</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item3">
+                    <a href="../index.html">
+                        <span class="menu-text">Preventative Maintenance</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item4">
+                    <a href="#link-to-abouttUs">
+                        <span class="menu-text">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item5">
+                    <a href="#link-to-contactUs">
+                        <span class="menu-text">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" id="cnt-grid1">
+        <div class="container-navbar-noscroll">
+            <div id="nvbcntns" class="navbar-contact">
+                <div class="cta-button cta-NonSticky">
+                    <a class="cta-button-link" href="tel:919-291-2741">
+                        <div>(919) 291-2741</div>
+                    </a>
+                </div>
+            </div>
+            <div class="cntNavbar-top">
+                <div class="navbar-logo">
+                    <div class="logo logo-hdr">
+                        <a href="../index.html" class="logo-link">
+                            <div id="logoImg"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-other">
+                    <div>(919) 291-2741</div>
+                    <div class="cta-button">
+                        <a class="cta-button-link" href="tel:919-291-2741">
+                            <div>CALL US</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-menuBtn">
+                <div class="menu-btn" onclick="toggleMenuBtn(this)" id="menuBtn">
+                    <div class="bars bar1"></div>
+                    <div class="bars bar2"></div>
+                    <div class="bars bar3"></div>
+                </div>
+            </div>
+            <div class="cntNavbar-bottom">
+                <div class="navbar-menubar">
+                    <div class="menu-items">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="menu-items"><a href="../index.html">Services</a></div>
+                    <div class="menu-items"><a href="#link-to-aboutUs">About Us</a></div>
+                    <div class="menu-items" id="last-item"><a href="#link-to-contactUs">Contact</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-banner banner-image">
+            <div class="imgid1">
+                <div class="image-slgn">
+                    <div class="slgn-container">
+                        <div class="slgn-header">EnergySense Heating & Cooling</div><br>
+                        <div class="slgn-main">Affordable, Friendly & Efficent!</div>
+                    </div>
+                    <div class="slgnCTA-container">
+                        <div class="slgn-cta">
+                            <a class="cta-button-link" href="tel:919-291-2741">
+                                <div>CALL US</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-aboutUs sections" id="sectionAboutUs">
+            <div class="section-anchor">
+                <a id="link-to-aboutUs"></a>
+            </div>
+            <div class="section-header article">
+                <div class="section-title">About Us</div>
+                <div class="section-greeting">
+                    <span>Welcome to</span>
+                    <br>
+                    <span>EnergySense Heating & Cooling!</span>
+                </div>
+            </div>
+            <div class="section-article article" id="artAbout">
+                <p>EnergySense specializes in service, installation,
+                    maintenance and air quality.
+                    <p>Our mission is to do business with integrity, provide superior service and present you energy
+                        efficent solutions
+                        with the most affordable options and prices. We believe one of the most important elements to
+                        residential living
+                        is having efficent and great air quality! We are committed to providing friendly, affordable and
+                        efficent heating and cooling solutions for you and your family. </p>
+                    <p> We at EnergySense Heating and Cooloing consider it an honor to service all your heating and cooling
+                        needs.
+                    </p>
+                </p>
+
+            </div>
+
+        </div>
+        <div class="section-contactUs sections">
+            <div class="section-anchor">
+                <a id="link-to-contactUs"></a>
+            </div>
+            <div class="section-header article">
+                <div class="section-title">Contact Information</div>
+                <div class="section-greeting aboutHeading">Location</div>
+            </div>
+            <div class="section-article-cnt article">
+                <div class="address">Talemore Court, Raleigh, NC 27614</div>
+                <div class="tblHeading aboutHeading">Hours</div>
+                <div class="hours">
+                    <table class="tbl-hours">
+                        <tbody>
+                            <tr class="row-item-1">
+                                <td class=".col-item-1">Monday</td>
+                                <td>8AM-5PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Tuesday</td>
+                                <td>8AM-5PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Wednesday</td>
+                                <td>8AM-5PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Thursday</td>
+                                <td>8AM-5PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Friday</td>
+                                <td>8AM-5PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Saturday</td>
+                                <td>8AM-3PM</td>
+                            </tr>
+                            <tr>
+                                <td class=".col-item-1">Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section-phone-header aboutHeading">
+                    Contact Numbers
+                </div>
+                <div class='section-phone  section-contact'>
+                    <a href="tel:919-291-2741">
+                        <div id="phone2">919.291.2741</div>
+                    </a>
+                </div>
+                <div class="section-contact cnt-email">
+                    <div class="aboutHeading">
+                        Email Address
+                    </div>
+                    <div>
+                        <a class="email" href="mailto:energysensehvac@gmail.com">energysensehvac@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-footer">
+            <!-- <div class="container-ftrSections"> -->
+            <div class="ftr-sct1">
+                <div class="logo logo-ftr">
+                    <a href="../index.html" class="logo-link">
+                        <div class="ftr-img" id="logoImg"></div>
+                    </a>
+                    <div>Energy Sense Heating & Cooling is a locally owned and operated HVAC company committed to
+                        providing
+                        affordable, friendly and energy efficient heating and cooling solutions.</div>
+                </div>
+            </div>
+
+            <div class="ftr-sct2">
+                <div class="qLinks">
+                    <div class="wTitle">Quick Links</div>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">Emergency Repair</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">Installation & Replacement</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">Preventative Maintenance</a>
+                        </li>
+                        <li>
+                            <a href="#link-to-aboutUs">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#link-to-contactUs">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftr-sct3">
+                <div class="qContacts wTitle">
+                    Call or Text Us
+                </div>
+                <span>
+                    <a href="tel:919-291-2741">919-291-2741</a>
+                </span>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="container-footerCR">
+            <div class="section1">
+                Copyright &copy; 2019 EnergySense Heating & Cooling
+            </div>
+            <div class="section2">
+                website by rasheeda austin
+            </div>
+        </div>
+    </div>
+    <div class="smbrflt">
+            <!-- <div class="social-bar-footer"> -->
+        <a href="https://www.facebook.com/EnergySenseHVAC/?ref=py_c" target="_blank" class="fab fa-facebook large-icon"></a>
+        <!-- <a href="#" class="fab fa-twitter"></a> -->
+        <a href="#" class="fab fa-google"></a>
+        <a href="https://www.linkedin.com/in/brad-austin-988116182" target="_blank" class="fab fa-linkedin-in"></a>
+            <!-- </div> -->
+
+    </div>
+    <div class="btn-top">
+        <a href="#" id="btnTop" title="Go to top">
+            <i class="fa fa-arrow-circle-up"></i>
+        </a>
+    </div>
+    <script src="main.js"></script>
+    <script src="../shared.js"></script>
+</body>
+
+
+
+</html>

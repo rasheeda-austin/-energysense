@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-eqiv="Cache-control: must-revalidate">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>EnergySense Heating & Cooling</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-navbar__scroll-sticky" id="navbar">
+        <div class="navbar-contact__sticky">
+            <div id="ctaSticky" class="cta-button">
+                <a class="cta-button-link" href="tel:919-291-2741">
+                    <div>(919) 291-2741</div>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-logo__sticky">
+            <div class="logo-sticky logo-hdr__sticky">
+                <a href="index.html" class="logo-link">
+                    <div id="logoImg-sticky"></div>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-menuBtn__sticky">
+            <div class="menu-btn" onclick="toggleMenuBtn(this)" id="menuBtn">
+                <div class="bars bar1"></div>
+                <div class="bars bar2"></div>
+                <div class="bars bar3"></div>
+            </div>
+        </div>
+        <div class="navbar-menubar__sticky">
+            <div class="menu-items">
+                <a href="#">Home</a>
+            </div>
+            <div class="menu-items"><a href="#link-to-Section1">Services</a></div>
+            <div class="menu-items"><a href="about-us/index.html">About Us</a></div>
+            <div class="menu-items" id="last-item"><a href="about-us/index.html">Contact</a></div>
+        </div>
+        <div class="navbar-other__sticky">
+            <div>(919) 291-2741</div>
+            <div class="cta-button">
+
+                <a class="cta-button-link" href="tel:919-291-2741">
+                    <div>CALL US</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobileNavCnt" id="mobileNavMenu">
+
+        <nav>
+            <ul id="menu" class="nav-items">
+                <li class="nav-item" id="nav-item1">
+                    <a href="index.html">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item1" onclick="clsMenu()">
+                    <a href="#link-to-Section1">
+                        <span class="menu-text">Emergency Repair</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item2">
+                    <a href="#link-to-Section2">
+                        <span class="menu-text">Installation & Replacement</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item3">
+                    <a href="#link-to-Section3">
+                        <span class="menu-text">Preventative Maintenance</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item4">
+                    <a href="about-us/index.html">
+                        <span class="menu-text">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item" id="nav-item5">
+                    <a href="about-us/index.html">
+                        <span class="menu-text">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" id="cnt-grid1">
+        <div class="container-navbar-noscroll">
+            <div id="nvbcntns" class="navbar-contact">
+                <div class="cta-button cta-NonSticky">
+                    <a class="cta-button-link" href="tel:919-291-2741">
+                        <div>(919) 291-2741</div>
+                    </a>
+                </div>
+            </div>
+            <div class="cntNavbar-top">
+                <div class="navbar-logo">
+                    <div class="logo logo-hdr">
+                        <a href="index.html" class="logo-link">
+                            <div id="logoImg"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-other">
+                    <div>(919) 291-2741</div>
+                    <div class="cta-button">
+                        <a class="cta-button-link" href="tel:919-291-2741">
+                            <div>CALL US</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-menuBtn">
+                <div class="menu-btn" onclick="toggleMenuBtn(this)" id="menuBtn">
+                    <div class="bars bar1"></div>
+                    <div class="bars bar2"></div>
+                    <div class="bars bar3"></div>
+                </div>
+            </div>
+            <div class="cntNavbar-bottom">
+                <div class="navbar-menubar">
+                    <div class="menu-items">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="menu-items"><a href="#link-to-Section1">Services</a></div>
+                    <div class="menu-items"><a href="about-us/index.html">About Us</a></div>
+                    <div class="menu-items" id="last-item"><a href="about-us/index.html">Contact</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-banner banner-image">
+            <div class="imgid1">
+                <div class="image-slgn">
+                    <div class="slgn-container">
+                        <div class="slgn-header slgn-headerl1">EnergySense</div>
+                        <div class="slgn-header slgn-headerl2">Heating & Cooling</div>
+                        <div class="slgn-main">Affordable, Friendly & Efficent!</div>
+                        <div class="slgnCTA-container">
+                            <div class="slgn-cta">
+                                <a class="cta-button-link" href="tel:919-291-2741">
+                                    <div>CALL US</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-services" id="sectionsServices">
+            <!-- <div class="services-wrapper"> -->
+            <div class="svc-wrapper svc1">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-top-half">
+                            <div class="card-icon card-icon1" id="cardIcon1"></div>
+                        </div>
+                        <div class="card-bottom-half">
+                            <div class="card-title cardTitle1">Emergency Repair Service</div>
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div class="card-items">Emergency Repair</div>
+                        <div class="card-items">Air Conditioner Repair</div>
+                        <div class="card-items">Air Duct Repair</div>
+                        <div class="card-items">Gas and Electric Furnaces</div>
+                        <div class="card-items">Heat Pump Repair</div>
+                        <div class="card-items">Thermostate Repair</div>
+                        <div class="card-items">much more...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="svc-wrapper svc2">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-top-half">
+                            <div class="card-icon card-icon2" id="cardIcon2"></div>
+                        </div>
+                        <div class="card-bottom-half">
+                            <div class="card-title cardTitle2">Installation & Replacement</div>
+
+                        </div>
+                    </div>
+                    <div class="card-main">
+                        <div class="card-items">Air Conditioners</div>
+                        <div class="card-items">Air Handlers</div>
+                        <div class="card-items">Gas and Electric Furnaces</div>
+                        <div class="card-items">Heat Pumps</div>
+                        <div class="card-items">Ductless Systems</div>
+                        <div class="card-items">Packaged Units</div>
+                        <div class="card-items">much more...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="svc-wrapper svc3">
+                <div class="card">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-top-half">
+                                <div class="card-icon card-icon3" id="cardIcon3"></div>
+                            </div>
+                            <div class="card-bottom-half">
+                                <div class="card-title cardTitle3">Preventative Maintenance</div>
+                            </div>
+                        </div>
+                        <div class="card-main" id="article1">
+                            <div class="card-items">Air Conditioner</div>
+                            <div class="card-items">Air Filter Inspection</div>
+                            <div class="card-items">Air Qualtiy Testing</div>
+                            <div class="card-items">Ductwork repair and regular cleaning</div>
+                            <div class="card-items">Furnaces and Heat Pumps</div>
+                            <div class="card-items">Coil Cleaning</div>
+                            <div class="card-items">much more...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="section-articles section-article1" id="sectionArticle1">
+            <div class="section-anchor">
+                <a id="link-to-Section1"></a>
+            </div>
+            <div class="wrapper-article__logo" id="artclLogo1">
+                <div class="article-img__logo imgLogoArticle1"> </div>
+            </div>
+            <div class="article-title article-title1">Emergency Repair</div>
+            <div class="article article1">
+                <span>
+                    Rely on a team of experts that will resolve your emergency HVAC repairs in a
+                    professional and timely manner.
+                    When your air conditioner or heating unit needs repair, you can count our team to provide the
+                    timely,
+                    reliable
+                    and affordable repair service you need.
+                </span>
+                <br>
+                <div class="section-contactUs section-contact popup">
+                    <span>
+                        <a href="tel:919-291-2741">Call us today!</a>
+                    </span>
+                    <!-- <span class="popuptext">
+                        <a href="tel:919-291-2741">919-291-2741</a>
+                    </span> -->
+                </div>
+            </div>
+
+            <div class="wrapper-article__img" id="artclImg1">
+                <div class="article-img imgArticle1"> </div>
+            </div>
+        </div>
+        <div class="section-articles section-article2" id="sectionArticle2">
+            <div class="section-anchor">
+                <a id="link-to-Section2"></a>
+            </div>
+            <div class="wrapper-article__logo" id="artclLogo2">
+                <div class="article-img__logo imgLogoArticle2"> </div>
+            </div>
+            <div class="article-title article-title2">Installation & Replacement</div>
+            <div class="article article2">
+                <span>A team of experienced and highly-qualified HVAC technicians who regularly install heating and air
+                    condition equipment
+                    for homeowners throughout the Triangle area are here to meet your HVAC system installation needs.
+                    Our installation
+                    service include:</span>
+                <ul>
+                    <li>Air conditioners</li>
+                    <li>Air handlers</li>
+                    <li>Gas and electric furnaces</li>
+                    <li>Heat pumps</li>
+                    <li>Ductless systems</li>
+                    <li>Packaged units</li>
+                </ul>
+                <span>Dedicated to providing friendly service and finding an HVAC unit that is energy efficent and
+                    affordable; which we will
+                    install at an affordable
+                    price and to your satisfaction.</span><br>
+                <div class="section-contactUs section-contact popup">
+                    <span>
+                        <a href="tel:919-291-2741">Call us today!</a>
+                    </span>
+                    <!-- <span class="popuptext">
+                        <a href="tel:919-291-2741">919-291-2741</a>
+                    </span> -->
+                </div>
+            </div>
+            <div class="wrapper-article__img" id="artclImg2">
+
+                <div class="article-img imgArticle2"></div>
+            </div>
+        </div>
+        <div class="section-articles section-article3" id="sectionArticle3">
+            <div class="section-anchor">
+                <a id="link-to-Section3"></a>
+            </div>
+            <div class="wrapper-article__logo" id="artclLogo3">
+
+                <div class="article-img__logo imgLogoArticle3"> </div>
+            </div>
+            <div class="article-title article-title3">Preventative Maintenance</div>
+            <div class="article article3">
+                <div>Scheduled service will help ensure homeowners avoid spending thousands of dollars on preventable
+                    repairs.
+                    Our exceptional Service team is here and ready to provide quality:</div>
+                <ul>
+                    <li>Air conditioner service and maintenance</li>
+                    <li>Furnace & heat pump service and maintenance</li>
+                    <li>Ductwork repairs and regular cleaning</li>
+                </ul>
+                <div>Preventative Maintenance is the key to preserving the life of your air conditioner or heating
+                    unit. Our experienced
+                    HVAC technicians will help you avoid those unexpected air conditioning and heating repairs. Our
+                    technicians
+                    will carefully inspect your HVAC system and provide expert advice on the next steps and provide a
+                    solid
+                    maintenance plan that will help extend the life of your homes HVAC system. Our preventative
+                    maintenance
+                    service includes:</div>
+                <ul>
+                    <li>Clearing/repairing ducts</li>
+                    <li>Cleaning air conditioners and replacing filters</li>
+                    <li>Furnace ignition replacement</li>
+                    <li>Thermostat evaluation/replacement</li>
+                    <li>Air quality testing</li>
+                    <li>And more</li>
+                </ul>
+                <div class="section-contactUs section-contact popup">
+                    <span>
+                        <a href="tel:919-291-2741">Call us today!</a>
+                    </span>
+                    <!-- <span class="popuptext">
+                                        <a href="tel:919-291-2741">919-291-2741</a>
+                                    </span> -->
+                </div>
+            </div>
+            <div class="wrapper-article__img" id="artclImg3">
+                <div class="article-img imgArticle3"></div>
+            </div>
+        </div>
+        <div class="containe-gurantee" id="sectionGurantee">
+            <div class="gurantee-wrapper">
+                <div class="shield"></div>
+                <div class="gurantee">100% Satisfation Gurantee!</div>
+                <div class="slogan">Friendly & efficent service at an affordable price!</div>
+            </div>
+        </div>
+        <div class="container-testimonials">
+
+            <div id="clickme">
+                Click here
+            </div>
+
+            <div id="blueDiv" class="div1 leftDiv">
+
+            </div>
+
+            <div id="whiteDiv" class="div2 mainDiv">
+
+            </div>
+
+            <div id="redDiv" class="div3 rightDiv">
+
+            </div>
+
+            <div class="lfBrd">
+
+            </div>
+            <div class="rtBrd">
+
+            </div>
+        </div>
+
+        <div class="container-ftrSections">
+            <div class="ftr-sct1">
+                <div class="logo logo-ftr">
+                    <a href="index.html" class="logo-link">
+                        <div class="ftr-img" id="logoImg"></div>
+                    </a>
+                    <div>EnergySense Heating & Cooling is a locally owned and operated HVAC company committed to
+                        providing
+                        affordable, friendly and energy efficient heating and cooling solutions.</div>
+                </div>
+            </div>
+            <div class="ftr-sct2">
+                <div class="qLinks">
+                    <div class="wTitle">Quick Links</div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#link-to-Section1">Emergency Repair</a>
+                        </li>
+                        <li>
+                            <a href="#link-to-Section2">Installation & Replacement</a>
+                        </li>
+                        <li>
+                            <a href="#link-to-Section3">Preventative Maintenance</a>
+                        </li>
+                        <li>
+                            <a href="about-us/index.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="about-us/index.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ftr-sct3">
+                <div class="qContacts wTitle">
+                    Call or Text Us
+                </div>
+                <span>
+                    <a href="tel:919-291-2741">919-291-2741</a>
+                </span>
+            </div>
+
+
+        </div>
+
+        <div class="container-footerCR">
+                <div class="section1">
+                    Copyright&copy; 2019 EnergySense Heating & Cooling
+                </div>
+                <div class="section2">
+                    website by rasheeda austin
+                </div>
+            </div>
+        <div class="btn-top">
+            <a href="#" id="btnTop" title="Go to top">
+                <i class="fa fa-arrow-circle-up"></i>
+            </a>
+        </div>
+        <!-- <div class="container-smbrflt"> -->
+        <div class="smbrflt" id="sbarbtm">
+            <!-- <div class="social-bar-footer"> -->
+            <a href="https://www.facebook.com/EnergySenseHVAC/?ref=py_c" target="_blank"
+                class="fab fa-facebook large-icon"></a>
+            <!-- <a href="#" class="fab fa-twitter"></a> -->
+            <a href="#" class="fab fa-google"></a>
+            <a href="https://www.linkedin.com/in/brad-austin-988116182" target="_blank" class="fab fa-linkedin-in"></a>
+            <!-- </div> -->
+
+        </div>
+        <!-- </div> -->
+        <div class="swiper-slide fade next">
+            <div class="testimonial">
+                <div class="testimonial__content">
+                    <div class="testimonial__text">
+                        These guys were great! Customer service was excellent. Scehdule an
+                        appointment and they were out in no time.
+                        They were on time and did a very good job. Left everything nice and
+                        tiddy.
+                        The price was so affordable, espically for the quality. Thank
+                        Guys!!
+                    </div>
+                </div>
+                <div class="testimonial__footer">
+                    <div class="testimonial__image">
+                        <img src="images/customer-1-blue.png" alt="Andy D.">
+                    </div>
+                    <cite class="testimonial__cite">
+                        <span class="testimonial__name">Andy D.</span>
+                        <span class="testimonial__title">Raleigh, NC</span>
+                    </cite>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide fade current">
+            <div class="testimonial">
+                <div class="testimonial__content">
+                    <div class="testimonial__text">
+                        These guys were great! Customer service was excellent. Scehdule an
+                        appointment and they were out in no time.
+                        The price was so affordable, espically for the quality. Thank
+                        Guys!!
+                    </div>
+                </div>
+                <div class="testimonial__footer">
+                    <div class="testimonial__image">
+                        <img src="images/customer-2-blue.png" alt="Andy D.">
+                    </div>
+                    <cite class="testimonial__cite">
+                        <span class="testimonial__name">Andy D.</span>
+                        <span class="testimonial__title">Raleigh, NC</span>
+                    </cite>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide fade prev">
+            <div class="testimonial">
+                <div class="testimonial__content">
+                    <div class="testimonial__text">
+                        They were on time and did a very good job. Left everything nice and
+                        tiddy.
+                        The price was so affordable, espically for the quality. Thank
+                        Guys!!
+                    </div>
+                </div>
+                <div class="testimonial__footer">
+                    <div class="testimonial__image">
+                        <img src="images/customer-3-blue.png" alt="Andy D.">
+                    </div>
+                    <cite class="testimonial__cite">
+                        <span class="testimonial__name">Andy D.</span>
+                        <span class="testimonial__title">Raleigh, NC</span>
+                    </cite>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script src="shared.js"></script>
+</body>
+
+
+</html>
+
+<!-- <div class="container-badges">
+                <div class="title-tstml article-title">
+                    What Our Customers Say About Us
+                </div>
+                <div class="image-tstml">
+                    <div class="img-text">5 STARS</div>
+                    <div class="img-star"></div>
+                </div>
+                <div class="container-swipper">
+                    <div class="prev-wrapper">
+                        <a class="prev-chvrn" id="chevron-left"> -->
+<!-- onclick="moveSlides(-1)" -->
+<!-- <i class="fas fa-chevron-left fa-chevron"></i>
+                        </a>
+                    </div>
+                    <div class="next-wrapper">
+                        <a class="next-chvrn" id="chevron-right"> -->
+<!-- onclick="moveSlides(1)" -->
+<!-- <i class="fas fa-chevron-right fa-chevron"></i>
+                        </a>
+                    </div>
+                </div>-->
